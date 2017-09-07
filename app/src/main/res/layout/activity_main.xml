@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/loanCalc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/calculator"
+        android:gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/amountView"
+            android:layout_width="0pd"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:hint="@string/amount" />
+
+
+        <EditText
+            android:id="@+id/amountNum"
+            android:layout_width="0pd"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:hint="@string/amount_hint" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/termView"
+            android:layout_width="0pd"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:hint="@string/term" />
+
+        <EditText
+            android:id="@+id/termNum"
+            android:layout_width="0pd"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:hint="@string/term_hint" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/interestView"
+            android:layout_width="0pd"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:hint="@string/interest" />
+
+        <EditText
+            android:id="@+id/interestNum"
+            android:layout_width="0pd"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:hint="@string/interest_hint" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/add"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:onClick=""
+            android:text="@string/calculate"/>
+        <Button
+            android:id="@+id/subtact"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:onClick=""
+            android:text="@string/clear" />
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/resultView"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/result" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/m_payment"
+            android:layout_width="0dp"
+            android:layout_weight="0.7"
+            android:layout_height="wrap_content"
+            android:hint="@string/m_payment" />
+
+        <TextView
+            android:id="@+id/mpResult"
+            android:layout_width="wrap_content"
+            android:layout_weight="0.3"
+            android:layout_height="wrap_content"
+            android:text="766.91" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/t_payment"
+            android:layout_width="0dp"
+            android:layout_weight="0.7"
+            android:layout_height="wrap_content"
+            android:hint="@string/t_payment" />
+
+        <TextView
+            android:id="@+id/tpResult"
+            android:layout_width="wrap_content"
+            android:layout_weight="0.3"
+            android:layout_height="wrap_content"
+            android:text="64420.44" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/t_interest"
+            android:layout_width="0pd"
+            android:layout_weight="0.7"
+            android:layout_height="wrap_content"
+            android:hint="@string/t_interest" />
+
+        <TextView
+            android:id="@+id/tiResult"
+            android:layout_width="wrap_content"
+            android:layout_weight="0.3"
+            android:layout_height="wrap_content"
+            android:text="14420.44" />
+    </LinearLayout>
+
+</LinearLayout>
